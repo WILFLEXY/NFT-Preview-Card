@@ -9,7 +9,140 @@
   <title>Frontend Mentor | NFT preview card component</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body{
+      font-size: 16px;
+      background-color: hsl(217, 54%, 11%);
+      padding: 60px 0 40px 0;
+    }
+    main{
+      background-color: hsl(216,  50%, 16%);
+      max-width: 70%;
+      margin: 0 auto;
+      height: 500px;
+      border-radius: 15px 15px 15px 15px;
+    }
+    .equilibruim-img{
+      max-width: 90%;
+      margin: 0 auto;
+      position: relative;
+      border-radius: 10px;
+      }
+    .equilibruim-img img{
+      max-width: 100%;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+  .icon-eye{
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      width: 100%;
+      height: 98%;
+      background-color: hsl(178, 100%, 50%);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 10px;
+      opacity: 0;
+     }
+    .icon-eye:hover{
+      opacity: 0.7;
+      cursor: pointer;
+    }
+    .icon-eye img{
+      width: 30px;
+      opacity: 1;
+    }
+    .equilibruim-content{
+      padding-left: 17px;
+      margin-bottom: 5px;
+    }
+    .container{
+      padding: 25px 20px 25px 20px;
+    }
+    .etherum{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 13px 0 10px 0;
+      padding: 0 17px 0 17px;
+    }
+    .etherum-value{
+      display: flex;
+      align-items: center;
+    }
+    .etherum-value p{
+      padding-left: 6px;
+      color: hsl(178, 100%, 50%);
+    }
+    .validity{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .validity img{
+      height: 15px;
+    }
+    .validity p{
+      padding-left: 6px;
+    }
+    .footer{
+      display: flex;
+      align-items: center;
+      padding: 0 17px 0 17px;
+      width: 90%;
+      margin: 0 auto;
+      padding-left: 17px;
+       }
+    .footer-img{
+      width: 35px;
+      height: 35px;
+      
+    }
+    .footer-img img{
+      width: 100%;
+      height: 100%;
+      border: 1px solid white;
+      border-radius: 50%;
+    }
+    .footer-content{
+      margin-left: 15px;
+    }
+   .link{
+      text-decoration: none;
+      cursor: pointer;
+      color: hsl(0, 0%, 100%);
+    }
+    .link:hover{
+     color: hsl(178, 100%, 50%);
+    }
+    h2{
+      margin: 10px 0 10px 0;
+    }
+    hr{
+      width: 90%;
+      margin: 0 auto;
+      border: 1px solid hsl(215, 32%, 27%);
+      }
+      p,.validity{
+        color: hsl(215, 51%, 70%);
+      }
+      p{
+        line-height: 27px;
+      }
  
+      @media (min-width: 375px) {
+        main{
+          max-width: 300px;
+        }
+      }
+   </style>
 </head>
 <body>
   <main>
